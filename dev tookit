@@ -1,0 +1,503 @@
+--[[
+local ScreenGui1 = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner1 = Instance.new("UICorner")
+local TextLabel1 = Instance.new("TextLabel")
+local UICorner2 = Instance.new("UICorner")
+local TextLabel2 = Instance.new("TextLabel")
+local UICorner3 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local ScreenGui2 = Instance.new("ScreenGui")
+local TextLabel3 = Instance.new("TextLabel")
+local ScreenGui2 = Instance.new("ScreenGui")
+local TextLabel3 = Instance.new("TextLabel")
+local ScreenGui3 = Instance.new("ScreenGui")
+local TextLabel4 = Instance.new("TextLabel")
+---------------------------------------
+ScreenGui1.Parent = game.CoreGui
+ScreenGui1.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui1
+Frame.BackgroundColor3 = Color3.fromRGB(0,0,0)
+Frame.Position = UDim2.new(-1.448, 0,0.065, 0)
+Frame.Size = UDim2.new(0.275353014, 0, 0.820448875, 0)
+
+UICorner1.CornerRadius = UDim.new(0, 30)
+UICorner1.Parent = Frame
+
+TextLabel1.Parent = Frame
+TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel1.BackgroundTransparency = 1.000
+TextLabel1.Size = UDim2.new(1, 0, 0.705167174, 0)
+TextLabel1.Font = Enum.Font.Michroma
+TextLabel1.Text = "灾难蛋"
+TextLabel1.TextColor3 = Color3.fromRGB(0, 255, 255)
+TextLabel1.TextScaled = true
+TextLabel1.TextSize = 14.000
+TextLabel1.TextWrapped = true
+
+UICorner2.CornerRadius = UDim.new(0, 30)
+UICorner2.Parent = TextLabel1
+
+TextLabel2.Parent = Frame
+TextLabel2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.BackgroundTransparency = 1.000
+TextLabel2.Position = UDim2.new(0, 0, 0.705167174, 0)
+TextLabel2.Size = UDim2.new(1, 0, 0.294832826, 0)
+TextLabel2.Font = Enum.Font.Michroma
+TextLabel2.Text = "1"
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 0)
+TextLabel2.TextScaled = true
+TextLabel2.TextSize = 14.000
+TextLabel2.TextWrapped = true
+
+UICorner3.CornerRadius = UDim.new(0, 30)
+UICorner3.Parent = TextLabel2
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.0842586756, 0, 0.408814579, 0)
+ImageLabel.Size = UDim2.new(0.703620017, 0, 0.227963522, 0)
+ImageLabel.Image = "rbxassetid://12541410300"
+
+ScreenGui2.Name = "ScreenGui2"
+ScreenGui2.Parent = game.CoreGui
+ScreenGui2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel3.Name = "TextLabel3"
+TextLabel3.Parent = ScreenGui2
+TextLabel3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel3.BackgroundTransparency = 1.000
+TextLabel3.Position = UDim2.new(-1.448, 0,0.255, 0)
+TextLabel3.Size = UDim2.new(0.51219511, 0, 0.28553617, 0)
+TextLabel3.Font = Enum.Font.SourceSans
+TextLabel3.Text = "您的注入器是: "..identifyexecutor()
+TextLabel3.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel3.TextScaled = true
+TextLabel3.TextSize = 14.000
+TextLabel3.TextWrapped = true
+
+ScreenGui3.Name = "ScreenGui3"
+ScreenGui3.Parent = game.CoreGui
+ScreenGui3.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TextLabel4.Name = "TextLabel3"
+TextLabel4.Parent = ScreenGui2
+TextLabel4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel4.BackgroundTransparency = 1.000
+TextLabel4.Position = UDim2.new(-1.448, 0,0.255, 0)
+TextLabel4.Size = UDim2.new(0.51219511, 0, 0.28553617, 0)
+TextLabel4.Font = Enum.Font.SourceSans
+TextLabel4.Text = "正在加载..."
+TextLabel4.TextColor3 = Color3.fromRGB(255, 0, 0)
+TextLabel4.TextScaled = true
+TextLabel4.TextSize = 14.000
+TextLabel4.TextWrapped = true
+---------------------------------------
+local A1 = "我们活着不能与草木同腐，不能醉生梦死，枉度人生，要有所作为！——方志敏"
+local A2 = "路漫漫其修远兮，吾将上下而求索。——屈原"
+local A3 = "一个能思想的人，才真是一个力量无边的人。——巴尔扎克"
+local A4 = "穷则独善其身，达则兼济天下。——孟子"
+local A5 = "生气的时候，开口前先数到十，如果非常愤怒，先数到一百。——杰弗逊"
+local A6 = "不知道并不可怕和有害。任何人都不可能什么都知道，可怕的和有害的是不知道而伪装知道。——托尔斯泰"
+local A7 = "君子之交淡若水，小人之交甘若醴，君子淡以亲，小人甘以绝。——庄子"
+local A8 = "今天所做之事勿候明天，自己所做之事勿候他人。——歌德"
+local A9 = "真正的幸福只有当你真实地认识到人生的价值时，才能体会到。——穆尼尔·纳素夫"
+local A10 = "物竞天择，适者生存。——赫胥黎"
+local B1 = "最聪明的人是最不愿浪费时间的人。——但丁"
+local B2 = "几个苍蝇咬几口，决不能羁留一匹英勇的奔马。——伏尔泰"
+local B3 = "社会犹如一条船，每个人都要有掌舵的准备。——易卜生"
+local B4 = "人生自古谁无死，留取丹心照汗青。——文天祥"
+local B5 = "空谈之类，是谈不久，也谈不出什麽来的，它始终被事实的镜子照出原形，拖出尾巴而去。——鲁迅"
+local B6 = "在行进时，也时时有人退伍，有人落荒，有人颓唐，有人叛变，然而只要无碍于进行，则越到后来，这队伍也就越成为纯粹、精锐的队伍了。——鲁迅"
+local B7 = "酒杯里竟能蹦出友谊来。——盖伊"
+local B8 = "天下兴亡，匹夫有责。——顾炎武"
+local B9 = "对别人的意见要表示尊重。千万别说：＂你错了。＂——卡耐基"
+local B10 = "读书是易事，思索是难事，但两者缺一，便全无用处。——富兰克林"
+local C1 = "君子爱财，取之有道。——孔子"
+local C2 = "宁要好梨一个，不要烂梨一筐。积极肯干和忠心耿耿的人即使只有两三个，也比十个朝气沉沉的人强。——列宁"
+local C3 = "应当在朋友正是困难的时候给予帮助，不可在事情无望之后再说闲话。——伊索"
+local C4 = "我们是国家的主人，应该处处为国家着想。——雷锋"
+local C5 = "有真道德，必生真胆量。凡怕天怕地怕人怕鬼的人，必是心中有鬼，必是品行不端。——宣永光"
+
+local r = math.random(1,20)
+if r ==1 then
+    TextLabel2.Text = A1
+end
+if r ==2 then
+    TextLabel2.Text = A2
+end
+if r ==3 then
+    TextLabel2.Text = A3
+end
+if r ==4 then
+    TextLabel2.Text = A4
+end
+if r ==5 then
+    TextLabel2.Text = A5
+end
+if r ==6 then
+    TextLabel2.Text = A6
+end
+if r ==7 then
+    TextLabel2.Text = A7
+end
+if r ==8 then
+    TextLabel2.Text = A8
+end
+if r ==9 then
+    TextLabel2.Text = A9
+end
+if r ==10 then
+    TextLabel2.Text = A10
+end
+if r ==11 then
+    TextLabel2.Text = B1
+end
+if r ==12 then
+    TextLabel2.Text = B2
+end
+if r ==13 then
+    TextLabel2.Text = B3
+end
+if r ==14 then
+    TextLabel2.Text = B4
+end
+if r ==15 then
+    TextLabel2.Text = B5
+end
+if r ==16 then
+    TextLabel2.Text = B6
+end
+if r ==17 then
+    TextLabel2.Text = B7
+end
+if r ==18 then
+    TextLabel2.Text = B8
+end
+if r ==19 then
+    TextLabel2.Text = B9
+end
+if r ==20 then
+    TextLabel2.Text = B10
+end
+if r ==21 then
+    TextLabel2.Text = C1
+end
+if r ==22 then
+    TextLabel2.Text = C2
+end
+if r ==23 then
+    TextLabel2.Text = C3
+end
+if r ==24 then
+    TextLabel2.Text = C4
+end
+if r ==25 then
+    TextLabel2.Text = C5
+end
+---------------------------------------
+wait(1)
+Frame:TweenPosition(UDim2.new(0.367, 0,0.065, 0), "InOut", "Quad", 1, true)
+wait(5)
+Frame:TweenPosition(UDim2.new(1.526, 0,0.065, 0), "InOut", "Quad", 1, true)
+wait(1)
+TextLabel3:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)
+wait(2)
+TextLabel3:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 2, true)
+wait(1)
+TextLabel4:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)
+wait(2)
+TextLabel4:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 1, true)
+]]
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+local Library = DarkraiX:Window("灾难蛋","创作工具","",Enum.KeyCode.RightControl);
+local Main = game.CoreGui.Darkrai.Main
+local OpenUI = Instance.new("ScreenGui")
+local ImageButton = Instance.new("ImageButton")
+local UICorner = Instance.new("UICorner")
+OpenUI.Name = "OpenUI"
+OpenUI.Parent = game.CoreGui
+OpenUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ImageButton.Parent = OpenUI
+ImageButton.BackgroundColor3 = Color3.fromRGB(0, 255, 255)
+ImageButton.BackgroundTransparency = 0.500
+ImageButton.Position = UDim2.new(0.0235790554, 0, 0.466334164, 0)
+ImageButton.Size = UDim2.new(0.034, 0,0.067, 0)
+ImageButton.Image = "rbxassetid://7509783315"
+ImageButton.Draggable = true
+UICorner.CornerRadius = UDim.new(0, 200)
+UICorner.Parent = ImageButton
+ImageButton.MouseButton1Click:Connect(function()
+    if uihide == false then
+        uihide = true
+        Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.4,true)
+    else
+        uihide = false
+        Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+    end
+end)
+
+local speedyibiaopan = Instance.new("ScreenGui")
+local WalkSpeedLabel = Instance.new("TextLabel")
+
+speedyibiaopan.Name = "speedyibiaopan"
+speedyibiaopan.Parent = game.CoreGui
+speedyibiaopan.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+WalkSpeedLabel.Name = "WalkSpeedLabel"
+WalkSpeedLabel.Parent = speedyibiaopan
+WalkSpeedLabel.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+WalkSpeedLabel.BorderSizePixel = 5
+WalkSpeedLabel.Position = UDim2.new(0.0802919716, 0, 0.574561417, 0)
+WalkSpeedLabel.Size = UDim2.new(0, 105, 0, 50)
+WalkSpeedLabel.Font = Enum.Font.SourceSans
+WalkSpeedLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+WalkSpeedLabel.TextSize = 14.000
+WalkSpeedLabel.TextScaled = true
+WalkSpeedLabel.Visible = false
+
+local JPyibiaopan = Instance.new("ScreenGui")
+local JPVal = Instance.new("TextLabel")
+
+JPyibiaopan.Name = "JPyibiaopan"
+JPyibiaopan.Parent = game.CoreGui
+JPyibiaopan.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+JPVal.Name = "JPVal"
+JPVal.Parent = JPyibiaopan
+JPVal.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+JPVal.BorderSizePixel = 5
+JPVal.Position = UDim2.new(0.0802919716, 0, 0.503489077, 0)
+JPVal.Size = UDim2.new(0, 105, 0, 50)
+JPVal.Font = Enum.Font.SourceSans
+JPVal.TextColor3 = Color3.fromRGB(0, 0, 0)
+JPVal.TextSize = 14.000
+JPVal.TextScaled = true
+JPVal.Visible = false
+
+local GRyibiaopan = Instance.new("ScreenGui")
+local GRVal = Instance.new("TextLabel")
+
+GRyibiaopan.Name = "GRyibiaopan"
+GRyibiaopan.Parent = game.CoreGui
+GRyibiaopan.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+GRVal.Name = "GRVal"
+GRVal.Parent = GRyibiaopan
+GRVal.BackgroundColor3 = Color3.fromRGB(255, 85, 0)
+GRVal.BorderSizePixel = 5
+GRVal.Position = UDim2.new(0.0802919716, 0, 0.646880627, 0)
+GRVal.Size = UDim2.new(0, 105, 0, 50)
+GRVal.Font = Enum.Font.SourceSans
+GRVal.TextColor3 = Color3.fromRGB(0, 0, 0)
+GRVal.TextSize = 14.000
+GRVal.TextScaled = true
+GRVal.Visible = false
+
+local lp = game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+local TweenService = game:GetService("TweenService")
+local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId)
+---------------------------------------
+Func = Library:Tab("实用工具")
+LocalPlayer = Library:Tab("玩家")
+PlaceInfo = Library:Tab("作品信息")
+ScriptInfo = Library:Tab("脚本作者信息")
+---------------------------------------
+function loopprintwalkspeed()
+    while _G.loopprintwalkspeed == true do
+        print(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
+        wait()
+    end
+end
+function loopprintjumppower()
+    while _G.loopprintjumppower == true do
+        print(game.Players.LocalPlayer.Character.Humanoid.JumpPower)
+        wait()
+    end
+end
+function loopprintgravity()
+    while _G.loopprintgravity == true do
+        print(workspace.Gravity)
+        wait()
+    end
+end
+function seewalkspeed()
+    while _G.seewalkspeed == true do
+        WalkSpeedLabel.Text = game.Players.LocalPlayer.Character.Humanoid.WalkSpeed
+        WalkSpeedLabel.Visible = true
+        wait()
+    end
+end
+function seejp()
+    while _G.seejp == true do
+        JPVal.Text = game.Players.LocalPlayer.Character.Humanoid.JumpPower
+        JPVal.Visible = true
+        wait()
+    end
+end
+function seegr()
+    while _G.seegr == true do
+        GRVal.Text = workspace.Gravity
+        GRVal.Visible = true
+        wait()
+    end
+end
+---------------------------------------
+Func:Seperator("游戏事件")
+Func:Button("SimpleSpy",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/exxtremestuffs/SimpleSpySource/master/SimpleSpy.lua"))()
+end)
+Func:Button("RemoteV2",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/DJZa4uKy"))()
+end)
+Func:Button("MrSpyV2",function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/rerSMCdn"))()
+end)
+Func:Button("TurtleSpy",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Turtle-Brand/Turtle-Spy/main/source.lua"))()
+end)
+Func:Seperator("Dex")
+Func:Button("DexV2",function()
+    loadstring(game:GetObjects("rbxassetid://492016519")[1].Source)()
+end)
+Func:Button("DexV3",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/ilikeCatexe/Dark-Dex-V3/main/README.md"))()
+end)
+Func:Button("DexV4",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/loglizzy/dexV4/main/loader.lua"))()
+end)
+Func:Button("DexV1 fixed",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/xiao122231/dex/main/1111"))()
+end)
+---------------------------------------
+LocalPlayer:Button("打印WalkSpeed",function()
+    print(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
+end)
+LocalPlayer:Toggle("持续打印WalkSpeed",false,function(value)
+    _G.loopprintwalkspeed = value
+    loopprintwalkspeed()
+end)
+LocalPlayer:Toggle("速度仪表盘",false,function(value)
+    _G.seewalkspeed = value
+    seewalkspeed()
+    while _G.seewalkspeed == false do
+        WalkSpeedLabel.Visible = false
+        wait()
+    end
+end)
+LocalPlayer:Button("打印重力",function()
+    print(game.Gravity)
+end)
+LocalPlayer:Toggle("持续打印JumpPower",false,function(value)
+    _G.loopprintjumppower = value
+    loopprintjumppower()
+end)
+LocalPlayer:Toggle("跳跃高度仪表盘",false,function(value)
+    _G.seejp = value
+    seejp()
+    while _G.seejp == false do
+        JPVal.Visible = false
+        wait()
+    end
+end)
+LocalPlayer:Button("打印Gravity",function()
+    print(game.Gravity)
+end)
+LocalPlayer:Toggle("持续打印Gravity",false,function(value)
+    _G.loopprintgravity = value
+    loopprintgravity()
+end)
+LocalPlayer:Toggle("重力仪表盘",false,function(value)
+    _G.seegr = value
+    seegr()
+    while _G.seegr == false do
+        GRVal.Visible = false
+        wait()
+    end
+end)
+LocalPlayer:Button("复制控制台指令(打在聊天栏上)",function()
+    setclipboard("/console")
+end)
+---------------------------------------
+PlaceInfo:Button("游戏名字: "..PlaceName.Name,function()
+   setclipboard(PlaceName.Name)
+end)
+PlaceInfo:Button("游戏ID: "..game.PlaceId,function()
+   setclipboard(game.PlaceId)
+end)
+---------------------------------------
+ScriptInfo:Button("QQ:958881885",function()
+    setclipboard(958881885)
+end)
+ScriptInfo:Button("Q群:519482628",function()
+    setclipboard(519482628)
+end)
+ScriptInfo:Button("严禁售卖",function()
+    setclipboard(519482628)
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+ScriptInfo:Button("倒卖死全家",function()
+    game.Players.LocalPlayer:Kick("Pls do not sell the script")
+end)
+---------------------------------------
