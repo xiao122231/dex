@@ -1,4 +1,4 @@
---[[
+
 local ScreenGui1 = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local UICorner1 = Instance.new("UICorner")
@@ -196,21 +196,20 @@ if r ==24 then
 end
 if r ==25 then
     TextLabel2.Text = C5
-end
----------------------------------------
-wait(1)
-Frame:TweenPosition(UDim2.new(0.367, 0,0.065, 0), "InOut", "Quad", 1, true)
-wait(5)
-Frame:TweenPosition(UDim2.new(1.526, 0,0.065, 0), "InOut", "Quad", 1, true)
-wait(1)
-TextLabel3:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)
-wait(2)
-TextLabel3:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 2, true)
-wait(1)
-TextLabel4:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)
-wait(2)
-TextLabel4:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 1, true)
-]]
+end--no skid lol lolol skid will die mom
+-----------------------------------------no skid lol lolol skid will die mom
+wait(1)--no skid lol lolol skid will die mom
+Frame:TweenPosition(UDim2.new(0.367, 0,0.065, 0), "InOut", "Quad", 1, true)--no skid lol lolol skid will die mom
+wait(5)--no skid lol lolol skid will die mom
+Frame:TweenPosition(UDim2.new(1.526, 0,0.065, 0), "InOut", "Quad", 1, true)--no skid lol lolol skid will die mom
+wait(1)--no skid lol lolol skid will die mom
+TextLabel3:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)--no skid lol lolol skid will die mom
+wait(2)--no skid lol lolol skid will die mom
+TextLabel3:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 2, true)--no skid lol lolol skid will die mom
+wait(1)--no skid lol lolol skid will die mom
+TextLabel4:TweenPosition(UDim2.new(0.231, 0,0.255, 0), "InOut", "Quad", 1, true)--no skid lol lolol skid will die mom
+wait(2)--no skid lol lolol skid will die mom
+TextLabel4:TweenPosition(UDim2.new(1.526, 0,0.255, 0), "InOut", "Quad", 1, true)--no skid lol lolol skid will die mom
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
 local Library = DarkraiX:Window("灾难蛋","创作工具","",Enum.KeyCode.RightControl);
 local Main = game.CoreGui.Darkrai.Main
